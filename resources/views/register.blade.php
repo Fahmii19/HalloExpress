@@ -79,10 +79,19 @@
         </div>
 
         <!-- Already have an account -->
+
         <div class="mt-4 text-center">
-            <p class="text-gray-600">Already have an account? <a href="#" class="text-teal-500 hover:underline" onclick="window.location.href='/'">Sign in</a></p>
+            <button onclick="window.location.href='/'">
+
+                <p class="text-gray-600">
+                    Already have an account?
+                    <div class="text-teal-500 hover:underline">Sign in</div>
+                </p>
+            </button>
 
         </div>
+
+
     </div>
 </div>
 @endsection
