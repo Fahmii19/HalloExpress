@@ -21,7 +21,7 @@
 
         <div class="w-full flex flex-col gap-4">
             <!-- Tombol Create an Account -->
-            <button class="bg-[#0F9BAE] text-white py-3 px-4 rounded-md w-full hover:bg-teal-600 transition duration-300">
+            <button onclick="window.location.href='/register'" class="bg-[#0F9BAE] text-white py-3 px-4 rounded-md w-full hover:bg-teal-600 transition duration-300">
                 Create an account
             </button>
 

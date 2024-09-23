@@ -6,7 +6,8 @@
 
         <!-- Header -->
         <div class="flex items-center mb-4">
-            <button class="text-gray-600 hover:text-gray-900">
+            <button class="text-gray-600 hover:text-gray-900" onclick="window.location.href='/'">
+
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
@@ -49,7 +50,7 @@
             </div>
 
             <!-- Register Button -->
-            <button class="bg-[#0F9BAE] text-white py-3 rounded-md w-full hover:bg-teal-600 transition duration-300">
+            <button type="button" onclick="window.location.href='/verifikasi'" class="bg-[#0F9BAE] text-white py-3 rounded-md w-full hover:bg-teal-600 transition duration-300">
                 Register
             </button>
         </form>
@@ -79,7 +80,8 @@
 
         <!-- Already have an account -->
         <div class="mt-4 text-center">
-            <p class="text-gray-600">Already have an account? <a href="#" class="text-teal-500 hover:underline">Sign in</a></p>
+            <p class="text-gray-600">Already have an account? <a href="#" class="text-teal-500 hover:underline" onclick="window.location.href='/'">Sign in</a></p>
+
         </div>
     </div>
 </div>

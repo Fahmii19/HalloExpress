@@ -5,7 +5,8 @@
     <div class="w-full max-w-md bg-white p-6 rounded-lg">
         <!-- Header -->
         <div class="flex items-center mb-4">
-            <button class="text-gray-600 hover:text-gray-900">
+            <button class="text-gray-600 hover:text-gray-900" type="button" onclick="window.location.href='/verifikasi'">
+
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
@@ -42,7 +43,7 @@
             <p class="text-xs text-gray-500">Atleast 1 number or a special character</p>
 
             <!-- Register Button -->
-            <button class="bg-[#0F9BAE] text-white py-3 rounded-md w-full hover:bg-teal-600 transition duration-300">
+            <button type="button" onclick="window.location.href='/profile'" class="bg-[#0F9BAE] text-white py-3 rounded-md w-full hover:bg-teal-600 transition duration-300">
                 Register
             </button>
         </form>
