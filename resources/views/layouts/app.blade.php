@@ -9,6 +9,20 @@
     {{-- @vite('resources/css/app.css') --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <!-- Mapbox -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DataTables CSS dan JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css" />
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
 
     <title>HalloExpress</title>
 </head>
@@ -16,5 +30,11 @@
     <div class="container mx-auto px-4">
         @yield('content')
     </div>
+
+    <script src="{{ asset('assets/js/peta.js') }}"></script>
+    <script src="{{ asset('assets/js/aksesibilitas.js') }}"></script>
+
+
+
 </body>
 </html>

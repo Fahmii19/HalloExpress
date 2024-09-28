@@ -29,3 +29,13 @@ Route::get('/setpassword', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+
+Route::get('/sign', function () {
+    return view('sign');
+});
+Route::get('/phone_verifikasi', function () {
+    return view('phone_verifikasi');
+});
+Route::get('/beranda', function () {
+    return view('beranda');
+});
