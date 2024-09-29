@@ -87,7 +87,7 @@ a.mapboxgl-ctrl-logo {
 
 /* Layer and Location Icons */
 .custom-layer {
-    background-image: url("../src/images/layers.png");
+    background-image: url("/assets/images/layers.png");
     background-position: 50% !important;
     background-repeat: no-repeat !important;
     display: block !important;

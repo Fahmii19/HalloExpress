@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="bg-white min-h-screen flex justify-center">
-    <div class="w-full max-w-md bg-white p-6 rounded-lg border border-red-500 flex flex-col justify-between">
+    <div class="w-full max-w-md bg-white rounded-lg">
 
 
         <div class="relative h-[100vh] z-10 bg-slate-50 w-full">
@@ -15,7 +15,8 @@
                                 <!-- Nama Judul - Screen Desktop  -->
                                 <div class="flex items-center justify-start">
                                     <a href="#" class="flex items-center">
-                                        <img src="./src/images/logo_invest.png" class="max-h-12 w-auto object-cover" alt="Logo Survey" />
+                                        <img src="{{ asset('assets/images/logo_invest.png') }}" class="max-h-12 w-auto object-cover" alt="Logo Survey" />
+
                                         <span class="ml-2 text-3xl font-extrabold">Survey Aksesibilitas</span>
                                     </a>
                                 </div>
@@ -26,7 +27,8 @@
                                 <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName" class="flex items-center text-sm font-medium text-gray-900 rounded-full" type="button">
                                     <span class="sr-only">Open user menu</span>
                                     <div class="flex items-center justify-center p-1 border-2 border-gray-700 rounded-full shadow">
-                                        <img class="w-6 h-6 rounded-full" src="./src/images/user.png" alt="user photo" />
+                                        <img class="w-6 h-6 rounded-full" src="{{ asset('assets/images/user.png') }}" alt="user photo" />
+
                                     </div>
                                 </button>
                                 <div id="dropdownAvatarName" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600 mx-10">
@@ -51,7 +53,8 @@
                             <div class="flex col justify-center mb-7 mt-4">
                                 <div class="flex flex-col">
                                     <div class="w-10 h-10 flex justify-center items-center cursor-pointer relative">
-                                        <img class="menu-icon" data-menu="1" src="./src/images/open_active.png" alt="" />
+                                        <img class="menu-icon" data-menu="1" src="{{ asset('assets/images/open_active.png') }}" alt="" />
+
                                     </div>
                                 </div>
                             </div>
@@ -59,23 +62,14 @@
                             <div class="flex col justify-center">
                                 <div class="flex flex-col">
                                     <div class="w-10 h-10 flex justify-center items-center cursor-pointer relative">
-                                        <img data-menu="2" class="menu-icon" src="./src/images/rekap.png" alt="" />
+                                        <img data-menu="2" class="menu-icon" src="{{ asset('assets/images/rekap.png') }}" alt="" />
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Mapbox - Screen Mobile -->
                         <div id="mapAksesibilitas" class="map-container">
-                            <div class="relative z-10 h-[10vh] bg-slate-50 px-6 pt-10 mobile-survey">
-                                <div class="flex items-center justify-between">
-                                    <div class="text-black font-bold text-2xl font-inter_bold">
-                                        Aksesibilitas
-                                    </div>
-                                    <div class="flex items-center">
-                                        <img src="./src/images/logout2.png" alt="Logout" class="h-6 md:h-12 lg:h-16" />
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- Konten - Screen Mobile -->
                             <div class="mobile-survey h-[90vh]">
@@ -85,243 +79,50 @@
                                         <div class="flex justify-center px-6 mb-3">
                                             <div class="w-7 h-1 bg-gray-300 rounded-full cursor-pointer sticky -top-2 z-10" id="toggleButtonRekap"></div>
                                         </div>
-                                        <div class="mb-4 -mt-1 flex flex-col px-6">
-                                            <div class="font-medium text-xl text-gray-700">Rekap</div>
+                                        <div class="mb-2 -mt-1 flex flex-col px-6">
+                                            <div class="font-medium text-xl text-gray-700">Pesan</div>
                                         </div>
                                     </div>
 
-                                    <!-- Data Dumy1 -->
-                                    <div class="relative px-3 pb-11">
-                                        <div class="flex flex-col mb-1">
-                                            <div class="text-black text-sm grid grid-cols-[1fr,60px] border rounded-md py-3 px-3 bg-white">
-                                                <div class="flex justify-start items-center w-full btn_open_table_detail">
-                                                    Taman Pondok Indah Pinggir Kali
-                                                </div>
-                                                <div class="flex justify-end mt-1.5">
-                                                    <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
-                                                    </div>
-                                                </div>
+                                    {{-- --}}
+                                    <div class="flex flex-col px-6 py-2">
+
+                                        <div class="relative mb-2">
+                                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                                                <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path fill-rule="evenodd" d="M5 9a7 7 0 1 1 8 6.93V21a1 1 0 1 1-2 0v-5.07A7.001 7.001 0 0 1 5 9Zm5.94-1.06A1.5 1.5 0 0 1 12 7.5a1 1 0 1 0 0-2A3.5 3.5 0 0 0 8.5 9a1 1 0 0 0 2 0c0-.398.158-.78.44-1.06Z" clip-rule="evenodd" />
+                                                </svg>
+
+
                                             </div>
-                                            <!-- Show Detail Data Dumy -->
-                                            <div class="text-black bg-slate-50 w-full h-full transition-all ease-in-out duration-300 table-detail px-3 pb-5 mt-3 hidden">
-                                                <div class="overflow-y-hidden h-[20vh] expand_rekap hide-scrollbar relative">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                            <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Alamat Lokasi</label>
-                                                            <input type="text" id="alamat" name="alamat" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" value="Jalan manggis" readonly="" />
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="lebar" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Lebar Jalan</label>
-                                                            <input type="text" id="lebar" name="lebar" class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" required="" />
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="jenis" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Jenis Jalan</label>
-                                                            <select class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 px-2.5 py-1.5 outline-none border-1 focus:border-gray-700 focus:ring-0" name="jenis">
-                                                                <option value="">Pilih</option>
-                                                                <option value="">Permukaan</option>
-                                                                <option value="">Underground</option>
-                                                                <option value="">Di atas</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="kelas" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Kelas Jalan</label>
-                                                            <select class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 px-2.5 py-1.5 outline-none border-1 focus:border-gray-700 focus:ring-0" name="kelas">
-                                                                <option value="">Pilih</option>
-                                                                <option value="">Arteri</option>
-                                                                <option value="">Kolektor</option>
-                                                                <option value="">Lingkungan</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="kelas" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Pedestrian</label>
-
-                                                            <div class="grid grid-rows-2">
-                                                                <div class="flex items-center">
-                                                                    <input id="ada" type="radio" value="" name="status" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600" />
-                                                                    <label for="ada" class="ml-3 text-sm">Ada</label>
-                                                                </div>
-                                                                <div class="flex items-center">
-                                                                    <input id="tidak-ada" type="radio" value="" name="status" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600" />
-                                                                    <label for="tidak-ada" class="ml-3 text-sm">Tidak Ada</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="max-w-screen-lg mx-auto grid grid-rows-2 mb-6">
-                                                            <div class="grid grid-cols-2 gap-x-5 mb-2">
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Depan</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoDepanInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoDepanInput', 'fotoDepanPreview')" />
-                                                                        <label for="fotoDepanInput" class="cursor-pointer">
-                                                                            <img id="fotoDepanPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Seberang</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoSeberangInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoSeberangInput', 'fotoSeberangPreview')" />
-                                                                        <label for="fotoSeberangInput" class="cursor-pointer">
-                                                                            <img id="fotoSeberangPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="grid grid-cols-2 gap-x-5">
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Kiri</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoKiriInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKiriInput', 'fotoKiriPreview')" />
-                                                                        <label for="fotoKiriInput" class="cursor-pointer">
-                                                                            <img id="fotoKiriPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Kanan</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoKananInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKananInput', 'fotoKananPreview')" />
-                                                                        <label for="fotoKananInput" class="cursor-pointer">
-                                                                            <img id="fotoKananPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="max-w-screen-lg mx-auto grid grid-rows-1">
-                                                            <div class="grid grid-cols-1">
-                                                                <div class="flex justify-center xs:pb-7">
-                                                                    <div class="">
-                                                                        <button id="btn_table_detail" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-0 font-medium rounded-full text-sm px-10 py-2.5 text-center">
-                                                                            Simpan
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
+                                            <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  " placeholder="Cari lokasi tujuan">
                                         </div>
-                                        <!-- Data Dumy2 -->
-                                        <div class="flex flex-col mb-1">
-                                            <!-- Data -->
-                                            <div class="text-black text-sm grid grid-cols-[1fr,60px] border rounded-md py-3 px-3 bg-white">
-                                                <div class="flex justify-start items-center w-full btn_open_table_detail">
-                                                    Taman Pondok Indah Pinggir Kali
-                                                </div>
-                                                <div class="flex justify-end mt-1.5">
-                                                    <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
-                                                    </div>
-                                                </div>
+
+                                        <div class="relative">
+                                            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+
+
+                                                <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                    <path fill-rule="evenodd" d="M11.906 1.994a8.002 8.002 0 0 1 8.09 8.421 7.996 7.996 0 0 1-1.297 3.957.996.996 0 0 1-.133.204l-.108.129c-.178.243-.37.477-.573.699l-5.112 6.224a1 1 0 0 1-1.545 0L5.982 15.26l-.002-.002a18.146 18.146 0 0 1-.309-.38l-.133-.163a.999.999 0 0 1-.13-.202 7.995 7.995 0 0 1 6.498-12.518ZM15 9.997a3 3 0 1 1-5.999 0 3 3 0 0 1 5.999 0Z" clip-rule="evenodd" />
+                                                </svg>
+
+
+
+
                                             </div>
-                                            <!-- Show Detail -->
-                                            <div class="text-black bg-slate-50 w-full h-full transition-all ease-in-out duration-300 table-detail px-3 pb-5 mt-3 hidden">
-                                                <div class="overflow-y-hidden h-[20vh] expand_rekap hide-scrollbar relative">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                            <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Alamat Lokasi</label>
-                                                            <input type="text" id="alamat" name="alamat" class="bg-gray-200 border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" value="Jalan manggis" readonly="" />
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="lebar" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Lebar Jalan</label>
-                                                            <input type="text" id="lebar" name="lebar" class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" required="" />
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="jenis" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Jenis Jalan</label>
-                                                            <select class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 px-2.5 py-1.5 outline-none border-1 focus:border-gray-700 focus:ring-0" name="jenis">
-                                                                <option value="">Pilih</option>
-                                                                <option value="">Permukaan</option>
-                                                                <option value="">Underground</option>
-                                                                <option value="">Di atas</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="kelas" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Kelas Jalan</label>
-                                                            <select class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 px-2.5 py-1.5 outline-none border-1 focus:border-gray-700 focus:ring-0" name="kelas">
-                                                                <option value="">Pilih</option>
-                                                                <option value="">Arteri</option>
-                                                                <option value="">Kolektor</option>
-                                                                <option value="">Lingkungan</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="kelas" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Pedestrian</label>
-
-                                                            <div class="grid grid-rows-2">
-                                                                <div class="flex items-center">
-                                                                    <input id="ada" type="radio" value="" name="status" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600" />
-                                                                    <label for="ada" class="ml-2 text-sm">Ada</label>
-                                                                </div>
-                                                                <div class="flex items-center">
-                                                                    <input id="tidak-ada" type="radio" value="" name="status" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600" />
-                                                                    <label for="tidak-ada" class="ml-2 text-sm">Tidak Ada</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="max-w-screen-lg mx-auto grid grid-rows-2 mb-6">
-                                                            <div class="grid grid-cols-2 gap-x-5 mb-2">
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Depan</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoDepanInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoDepanInput', 'fotoDepanPreview')" />
-                                                                        <label for="fotoDepanInput" class="cursor-pointer">
-                                                                            <img id="fotoDepanPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Seberang</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoSeberangInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoSeberangInput', 'fotoSeberangPreview')" />
-                                                                        <label for="fotoSeberangInput" class="cursor-pointer">
-                                                                            <img id="fotoSeberangPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="grid grid-cols-2 gap-x-5">
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Kiri</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoKiriInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKiriInput', 'fotoKiriPreview')" />
-                                                                        <label for="fotoKiriInput" class="cursor-pointer">
-                                                                            <img id="fotoKiriPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Foto Kanan</label>
-                                                                    <div class="relative">
-                                                                        <input type="file" id="fotoKananInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKananInput', 'fotoKananPreview')" />
-                                                                        <label for="fotoKananInput" class="cursor-pointer">
-                                                                            <img id="fotoKananPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex justify-center mb-4">
-                                                            <div class="">
-                                                                <button id="btn_table_detail" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-0 font-medium rounded-full text-sm px-10 py-2.5 text-center">
-                                                                    Simpan
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
+                                            <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  " placeholder="Tujuan lokasi">
                                         </div>
-                                        <!--  -->
+
+
+                                        <div class="w-full flex justify-center mt-2.5">
+                                            <button type="button" class="text-white text-md font-bold bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg w-full px-5 py-2.5 me-2 mb-2">Pesan sekarang</button>
+                                        </div>
+
+
+
+
                                     </div>
+                                    {{-- --}}
                                 </div>
 
                                 <!-- Konten Form - Screen Mobile  -->
@@ -396,7 +197,8 @@
                                                                     <div class="relative">
                                                                         <input type="file" id="fotoDepanInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoDepanInput', 'fotoDepanPreview')" />
                                                                         <label for="fotoDepanInput" class="cursor-pointer">
-                                                                            <img id="fotoDepanPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                            <img id="fotoDepanPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -405,7 +207,8 @@
                                                                     <div class="relative">
                                                                         <input type="file" id="fotoSeberangInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoSeberangInput', 'fotoSeberangPreview')" />
                                                                         <label for="fotoSeberangInput" class="cursor-pointer">
-                                                                            <img id="fotoSeberangPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                            <img id="fotoSeberangPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -417,7 +220,8 @@
                                                                     <div class="relative">
                                                                         <input type="file" id="fotoKiriInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKiriInput', 'fotoKiriPreview')" />
                                                                         <label for="fotoKiriInput" class="cursor-pointer">
-                                                                            <img id="fotoKiriPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                            <img id="fotoKiriPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -426,7 +230,8 @@
                                                                     <div class="relative">
                                                                         <input type="file" id="fotoKananInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKananInput', 'fotoKananPreview')" />
                                                                         <label for="fotoKananInput" class="cursor-pointer">
-                                                                            <img id="fotoKananPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                            <img id="fotoKananPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -495,36 +300,58 @@
                             </div>
 
                             <!-- Menu Navigation - Mobile  -->
-                            <div class="mobile-survey h-[10vh] w-full fixed bottom-0 p-5 px-6 bg-white shadow-3xl text-gray-400 cursor-pointer z-10">
-                                <div class="grid grid-cols-3">
-                                    <!-- Menu1 -->
-                                    <div class="flex flex-col items-center">
+
+                            <div class="mobile-survey h-20 w-full flex items-center fixed bottom-0 px-6 bg-white shadow-3xl text-gray-400 cursor-pointer z-10 rounded-t-xl">
+                                <div class="grid grid-cols-4 w-full h-full">
+
+
+                                    <div class="flex justify-center items-center">
                                         <div class="inline-flex flex-col items-center justify-center">
-                                            <div class="flex w-8 h-8 items-center justify-center btn_rekap">
-                                                <img src="./src/images/rekap.png" alt="" class="menu-image-rekap" />
+                                            <div class="flex w-8 h-8 items-center justify-center btn_rekap border-b-4 border-transparent  transition duration-300 ">
+                                                <img src="{{ asset('assets/images/home-button.png') }}" alt="" class="menu-image-rekap" />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- Menu2 -->
-                                    <div class="flex flex-col items-center relative">
-                                        <div class="bottom-5 text-center flex items-center justify-center rounded-full text-3xl p-[3vh] text-white bg-[#2A64D9] transition ease-in duration-200 absolute btn_form_input">
-                                            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-                                            </svg>
-                                        </div>
-                                    </div>
 
-                                    <!-- Menu3 -->
-                                    <div class="flex flex-col items-center">
+                                    <div class="flex justify-center items-center ">
+
+
                                         <div class="inline-flex flex-col items-center justify-center">
                                             <div class="flex w-8 h-8 items-center justify-center btn_profil">
-                                                <img src="./src/images/user.png" alt="" class="menu-image-profil" />
+                                                <img src="{{ asset('assets/images/wallet.png') }}" alt="" class="menu-image-profil" />
+
                                             </div>
                                         </div>
+
+
+                                    </div>
+                                    <div class="flex justify-center items-center ">
+                                        <div class="inline-flex flex-col items-center justify-center">
+                                            <div class="flex w-8 h-8 items-center justify-center btn_profil">
+                                                <img src="{{ asset('assets/images/discount-label.png') }}" alt="" class="menu-image-profil" />
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="flex justify-center items-center ">
+
+                                        <div class="inline-flex flex-col items-center justify-center">
+                                            <div class="flex w-8 h-8 items-center justify-center btn_profil">
+                                                <img src="{{ asset('assets/images/account.png') }}" alt="" class="menu-image-profil" />
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
                         </div>
 
                         <!--  Screen Dekstop - Menu Survey Aksesibilitas -->
@@ -616,7 +443,8 @@
                                                         <div class="relative">
                                                             <input type="file" id="fotoDepanInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoDepanInput', 'fotoDepanPreview')" />
                                                             <label for="fotoDepanInput" class="cursor-pointer">
-                                                                <img id="fotoDepanPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                <img id="fotoDepanPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                             </label>
                                                         </div>
                                                     </div>
@@ -625,7 +453,8 @@
                                                         <div class="relative">
                                                             <input type="file" id="fotoSeberangInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoSeberangInput', 'fotoSeberangPreview')" />
                                                             <label for="fotoSeberangInput" class="cursor-pointer">
-                                                                <img id="fotoSeberangPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                <img id="fotoSeberangPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                             </label>
                                                         </div>
                                                     </div>
@@ -637,7 +466,7 @@
                                                         <div class="relative">
                                                             <input type="file" id="fotoKiriInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKiriInput', 'fotoKiriPreview')" />
                                                             <label for="fotoKiriInput" class="cursor-pointer">
-                                                                <img id="fotoKiriPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                <img id="fotoKiriPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
                                                             </label>
                                                         </div>
                                                     </div>
@@ -646,7 +475,8 @@
                                                         <div class="relative">
                                                             <input type="file" id="fotoKananInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKananInput', 'fotoKananPreview')" />
                                                             <label for="fotoKananInput" class="cursor-pointer">
-                                                                <img id="fotoKananPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                <img id="fotoKananPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                             </label>
                                                         </div>
                                                     </div>
@@ -678,7 +508,8 @@
                                     <div class="flex items-end justify-end pr-2">
                                         <div class="relative inline-flex items-center justify-center w-7 h-7 overflow-hidden">
                                             <div class="w-10 h-10 flex justify-center items-center cursor-pointer relative btn_close_judul_table">
-                                                <img src="./src/images/close_rekap.png" alt="" />
+                                                <img src="{{ asset('assets/images/close_rekap.png') }}" alt="" />
+
                                             </div>
                                         </div>
                                     </div>
@@ -695,7 +526,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -708,7 +540,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -721,7 +554,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -734,7 +568,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -747,7 +582,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -760,7 +596,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -773,7 +610,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -786,7 +624,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -799,7 +638,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -812,7 +652,8 @@
                                                 </div>
                                                 <div class="flex justify-end py-3 px-3">
                                                     <div class="w-[1.1rem] h-[1.1rem]">
-                                                        <img src="./src/images/hapus.png" alt="Delete" />
+                                                        <img src="{{ asset('assets/images/hapus.png') }}" alt="Delete" />
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -909,7 +750,8 @@
                                                                 <div class="relative">
                                                                     <input type="file" id="fotoDepanInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoDepanInput', 'fotoDepanPreview')" />
                                                                     <label for="fotoDepanInput" class="cursor-pointer">
-                                                                        <img id="fotoDepanPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                        <img id="fotoDepanPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -918,7 +760,8 @@
                                                                 <div class="relative">
                                                                     <input type="file" id="fotoSeberangInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoSeberangInput', 'fotoSeberangPreview')" />
                                                                     <label for="fotoSeberangInput" class="cursor-pointer">
-                                                                        <img id="fotoSeberangPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                        <img id="fotoSeberangPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -930,7 +773,8 @@
                                                                 <div class="relative">
                                                                     <input type="file" id="fotoKiriInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKiriInput', 'fotoKiriPreview')" />
                                                                     <label for="fotoKiriInput" class="cursor-pointer">
-                                                                        <img id="fotoKiriPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                        <img id="fotoKiriPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -939,7 +783,8 @@
                                                                 <div class="relative">
                                                                     <input type="file" id="fotoKananInput" class="opacity-0 absolute inset-0 w-full h-full cursor-pointer" accept="image/*" onchange="previewImage('fotoKananInput', 'fotoKananPreview')" />
                                                                     <label for="fotoKananInput" class="cursor-pointer">
-                                                                        <img id="fotoKananPreview" class="w-auto h-5vh" src="./src/images/noimage.png" alt="Tidak ada gambar" />
+                                                                        <img id="fotoKananPreview" class="w-auto h-5vh" src="{{ asset('assets/images/noimage.png') }}" alt="Tidak ada gambar" />
+
                                                                     </label>
                                                                 </div>
                                                             </div>

@@ -14,7 +14,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
     <!-- Flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -27,7 +27,8 @@
     <title>HalloExpress</title>
 </head>
 <body class="bg-gray-100">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto">
+        {{-- <div class="container mx-auto px-4"> --}}
         @yield('content')
     </div>
 
