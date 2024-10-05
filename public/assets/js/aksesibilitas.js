@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mengatur event click pada tombol "Toggle Profil"
     if (toggleButtonProfil && formProfil) {
-        formContainerProfilHide.style.height = "26vh";
+        formContainerProfilHide.style.height = "70vh";
         toggleButtonProfil.addEventListener("click", function () {
             toggleHeight(formProfil, "35vh", "90vh");
 

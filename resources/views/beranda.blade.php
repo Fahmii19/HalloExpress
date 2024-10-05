@@ -260,7 +260,7 @@
                                         </div>
                                         <div class="mb-4 -mt-1 flex flex-col px-6">
                                             <div class="font-medium text-xl text-gray-700">
-                                                Profil
+                                                Saldo
                                             </div>
                                         </div>
                                     </div>
@@ -270,28 +270,219 @@
                                         <div class="flex flex-col mb-1">
                                             <div class="text-black bg-slate-50 w-full h-full transition-all ease-in-out duration-300 table-detail px-3 pb-5 mt-3">
                                                 <div class="overflow-y-hidden h-[20vh] expand_profil hide-scrollbar relative">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                            <label for="nama" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Nama</label>
-                                                            <input type="text" id="nama" name="nama" class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" placeholder="Fahmi" readonly />
+
+
+                                                    {{--ok1 --}}
+                                                    <div class="grid grid-cols-2 ">
+
+                                                        <div>
+                                                            <a class="inline-block rounded-xl border border-indigo-600 px-10 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500" href="#">
+                                                                Tarik Saldo
+                                                            </a>
                                                         </div>
-                                                        <div class="mb-3">
-                                                            <label for="penempatan" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Penempatan</label>
-                                                            <input type="text" id="penempatan" name="penempatan" class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" placeholder="Jakarta Selatan" readonly />
-                                                        </div>
-                                                        <div class="mb-16">
-                                                            <label for="jabatan" class="block mb-1 text-sm font-medium text-gray-900 tracking-wide">Jabatan</label>
-                                                            <input type="text" id="jabatan" name="jabatan" class="bg-white border border-gray-300 text-gray-900 text-sm block w-full h-10 p-2.5 outline-none border-1 focus:border-gray-700 focus:ring-0" placeholder="AJIB" readonly />
+                                                        <div class="flex justify-end">
+                                                            <a class="inline-block rounded-xl border border-indigo-600 px-10 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500" href="#">
+                                                                Topup Saldo
+                                                            </a>
                                                         </div>
 
-                                                        <div class="max-w-screen-lg mx-auto grid grid-rows-1 mb-16">
-                                                            <div class="grid grid-cols-1">
-                                                                <div class="flex justify-center xs:pb-7">
-                                                                    <div class="">&nbsp;</div>
+                                                    </div>
+
+                                                    <div class="mx-auto max-w-3xl py-8 sm:px-6 sm:py-12 lg:px-8">
+                                                        <div class="grid grid-cols-2 gap-10 sm:grid-cols-2 sm:items-center md:gap-8 px-1">
+
+                                                            <div class="rounded-2xl border border-indigo-600 p-3 shadow-sm ring-1  bg-indigo-100 ring-indigo-600 sm:order-last sm:px-8 lg:p-12">
+                                                                <div class="text-center">
+
+
+                                                                    <p class="mt-2 sm:mt-4">
+                                                                        <strong class="text-lg font-bold text-gray-900 sm:text-4xl">Rp. 504.000 </strong>
+
+                                                                    </p>
+                                                                </div>
+
+                                                                <ul class="mt-1 space-y-2 text-center">
+
+                                                                    <h2 class="text-lg font-medium text-gray-900">
+                                                                        Saldo
+                                                                    </h2>
+
+                                                                </ul>
+
+                                                            </div>
+
+
+                                                            <div class="rounded-2xl border border-indigo-600 p-3 shadow-sm ring-1 ring-indigo-600 sm:order-last sm:px-8 lg:p-12 bg-indigo-100">
+                                                                <div class="text-center">
+
+
+                                                                    <p class="mt-2 sm:mt-4">
+                                                                        <strong class="text-lg font-bold text-gray-900 sm:text-4xl">Rp. 1.000.000 </strong>
+
+                                                                    </p>
+                                                                </div>
+
+                                                                <ul class="mt-1 space-y-2 text-center">
+
+                                                                    <h2 class="text-lg font-medium text-gray-900">
+                                                                        <div class="flex flex-col">
+                                                                            <div>Pendapatan</div>
+                                                                            <div class="-mt-2">Harian</div>
+                                                                        </div>
+
+                                                                    </h2>
+
+                                                                </ul>
+
+                                                            </div>
+
+
+
+                                                            {{-- ok2 --}}
+                                                        </div>
+                                                    </div>
+
+
+                                                    {{-- --}}
+
+                                                    <article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8 mb-3">
+                                                        <div class="w-full ">
+                                                            <div class="hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500" aria-hidden="true">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span class="h-8 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-6 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-4 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-6 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-8 w-0.5 rounded-full bg-indigo-500"></span>
                                                                 </div>
                                                             </div>
+
+                                                            <div class="w-full">
+                                                                <strong class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
+                                                                    Orderan #101
+                                                                </strong>
+
+                                                                <h3 class="mt-4 text-lg font-medium sm:text-xl">
+                                                                    <a href="#" class="hover:underline"> Abdilah Iskandar Gunawan </a>
+
+                                                                </h3>
+                                                                <div class="grid grid-cols-3 text-gray-500">
+                                                                    <div class="col-span-2">
+                                                                        <div class="inline-flex">
+
+                                                                            <p class="text-sm font-medium">20:48</p>
+                                                                            <p class="text-sm font-medium">&nbsp;-&nbsp;</p>
+                                                                            <p class="text-sm font-medium">21:00</p>
+                                                                            <p class="text-sm font-medium">&nbsp;-&nbsp;</p>
+
+                                                                            <div>7.32 km</div>
+
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="text-green-500 font-bold text-right">
+                                                                        Selesai
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="mt-2 text-xs font-medium text-gray-500 sm:mt-0 flex flex-col">
+
+                                                                    <div class="inline-flex">
+                                                                        <svg class="w-3.5 h-3.5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 0v6M9.5 9A2.5 2.5 0 0 1 12 6.5" />
+                                                                        </svg>
+
+
+
+                                                                        Jl Mawar Blok A71, Tapos, Kota Depok</div>
+                                                                    <div class="inline-flex">
+
+                                                                        <svg class="w-3.5 h-3.5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
+                                                                        </svg>
+
+
+                                                                        Cibinong City Mall, Cibinong, Kab. Bogor</div>
+
+
+                                                                </div>
+
+                                                            </div>
                                                         </div>
-                                                    </form>
+                                                    </article>
+                                                    <article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
+                                                        <div class="w-full ">
+                                                            <div class="hidden sm:grid sm:size-20 sm:shrink-0 sm:place-content-center sm:rounded-full sm:border-2 sm:border-indigo-500" aria-hidden="true">
+                                                                <div class="flex items-center gap-1">
+                                                                    <span class="h-8 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-6 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-4 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-6 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                    <span class="h-8 w-0.5 rounded-full bg-indigo-500"></span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="w-full">
+                                                                <strong class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
+                                                                    Orderan #101
+                                                                </strong>
+
+                                                                <h3 class="mt-4 text-lg font-medium sm:text-xl">
+                                                                    <a href="#" class="hover:underline"> Abdilah Iskandar Gunawan </a>
+
+                                                                </h3>
+                                                                <div class="grid grid-cols-3 text-gray-500">
+                                                                    <div class="col-span-2">
+                                                                        <div class="inline-flex">
+
+                                                                            <p class="text-sm font-medium">20:48</p>
+                                                                            <p class="text-sm font-medium">&nbsp;-&nbsp;</p>
+                                                                            <p class="text-sm font-medium">21:00</p>
+                                                                            <p class="text-sm font-medium">&nbsp;-&nbsp;</p>
+
+                                                                            <div>7.32 km</div>
+
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="text-red-500 font-bold text-right">
+                                                                        Tidak Selesai
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="mt-2 text-xs font-medium text-gray-500 sm:mt-0 flex flex-col">
+
+                                                                    <div class="inline-flex">
+                                                                        <svg class="w-3.5 h-3.5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 0v6M9.5 9A2.5 2.5 0 0 1 12 6.5" />
+                                                                        </svg>
+
+
+
+                                                                        Jl Mawar Blok A71, Tapos, Kota Depok</div>
+                                                                    <div class="inline-flex">
+
+                                                                        <svg class="w-3.5 h-3.5 mr-1 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
+                                                                        </svg>
+
+
+                                                                        Cibinong City Mall, Cibinong, Kab. Bogor</div>
+
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </article>
+
+
                                                 </div>
                                             </div>
                                         </div>
