@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,maximum-scale=1,minimum-scale=1"
+    />
+    <title>Mobile UI</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="naviklan">
+          <img
+            src="halloxpress-removebg-preview.png"
+            alt="halloxpress logo"
+            class="logo"
+          />
+        </div>
+        <div class="img" style="background-image: url('img/user.jpg')"></div>
+      </nav>
+      <div class="search">
+        <span class="las la-search"></span>
+        <input type="text" placeholder="Search your daily Grocery food ..." />
+      </div>
+    </header>
+
+    <main>
+      <!-- Section Iklan -->
+      <div class="ads">
+        <div class="ads-image"></div>
+      </div>
+      <!-- Section Titik Penjemputan dan Pengantaran -->
+      <div class="pickup-delivery-wrapper">
+        <div
+          style="
+            width: 100%;
+            height: auto;
+            position: relative;
+            max-width: 659px;
+            margin: 0 auto;
+          "
+        >
+          <div
+            style="
+              width: 100%;
+              height: 132px;
+              position: absolute;
+              background: white;
+              border-radius: 32px;
+            "
+          ></div>
+          <div
+            style="
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              top: 24px;
+              left: 3%;
+            "
+          >
+            <div
+              style="
+                width: 30px;
+                height: 30px;
+                background: #ed6723;
+                border-radius: 9999px;
+              "
+            ></div>
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background: white;
+                border-radius: 9999px;
+              "
+            ></div>
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: 83px;
+              left: 15%;
+              color: #646363;
+              font-size: 1.25rem;
+              font-family: Rubik;
+              font-weight: 500;
+            "
+          >
+            Titik Pengantaran
+          </div>
+          <div
+            style="
+              width: 100%;
+              height: auto;
+              position: absolute;
+              top: 24px;
+              left: 3%;
+              max-width: 223px;
+            "
+          >
+            <div
+              style="
+                position: absolute;
+                left: 47px;
+                top: 0px;
+                color: #646363;
+                font-size: 1.25rem;
+                font-family: Rubik;
+                font-weight: 500;
+              "
+            >
+              Titik Penjemputan
+            </div>
+            <div
+              style="width: 30px; height: 30px; position: absolute; top: 53px"
+            >
+              <div
+                style="
+                  width: 30px;
+                  height: 30px;
+                  background: #00aa13;
+                  border-radius: 9999px;
+                "
+              ></div>
+              <div
+                style="
+                  width: 12px;
+                  height: 14px;
+                  position: absolute;
+                  top: 9px;
+                  left: 9px;
+                  border: 3px white solid;
+                "
+              ></div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 60%;
+              height: 0px;
+              position: absolute;
+              top: 67px;
+              left: 10%;
+              border: 1px #bdbdbd solid;
+            "
+          ></div>
+          <div
+            style="
+              width: 140px;
+              height: 64px;
+              position: absolute;
+              top: 35px;
+              right: 3%;
+            "
+          >
+            <div
+              style="
+                width: 100%;
+                height: 64px;
+                background: white;
+                border-radius: 40px;
+                border: 2px #bdbdbd solid;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                left: 50%;
+                top: 18px;
+                transform: translateX(-50%);
+                color: #646363;
+                font-size: 1.5rem;
+                font-family: Rubik;
+                font-weight: 500;
+              "
+            >
+              Add
+            </div>
+            <div
+              style="
+                width: 27px;
+                height: 27px;
+                position: absolute;
+                top: 19px;
+                left: 20px;
+              "
+            >
+              <div
+                style="
+                  width: 27px;
+                  height: 27px;
+                  background: #ed6723;
+                  border-radius: 9999px;
+                "
+              ></div>
+              <div
+                style="
+                  width: 20px;
+                  height: 20px;
+                  position: absolute;
+                  top: 4px;
+                  left: 4px;
+                  background: white;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Kendaraan Tersedia -->
+      <div class="categories section-wrapper" style="margin-top: 40%">
+        <div class="flex-header">
+          <h2>Kendaraan Tersedia</h2>
+          <a href="category.html">See all</a>
+        </div>
+        <div class="items">
+          <div class="item">
+            <div
+              class="item-img"
+              style="background-image: url(asset/PICKUP-BAK.png)"
+            ></div>
+            <h4>Pickup Bak</h4>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background-image: url(asset/CDD-BAK.png)"
+            ></div>
+            <h4>CDD Bak</h4>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background-image: url(asset/CDD-BOX.png)"
+            ></div>
+            <h4>CDD Box</h4>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item">
+            <div
+              class="item-img"
+              style="background-image: url(asset/ENGKEL-BOX.png)"
+            ></div>
+            <h4>ENGKEL-BOX</h4>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background-image: url(asset/PICKUP-BOX.png)"
+            ></div>
+            <h4>Pickup box</h4>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background-image: url(asset/DESIGN-KENDARAAN-STICKER.png)"
+            ></div>
+            <h4>Truck</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo">
+        <div class="items promo-items">
+          <div class="promo-item">
+            <div
+              class="promo-img"
+              style="background-image: url(image.png)"
+            ></div>
+            <div class="promo-info">
+              <h3>30% Discount</h3>
+              <p>Order any from app and get discount</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+          <div class="promo-item">
+            <div
+              class="promo-img"
+              style="background-image: url(image.png)"
+            ></div>
+            <div class="promo-info">
+              <h3>30% Discount</h3>
+              <p>Order any from app and get discount</p>
+              <a href="">Order now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="popular section-wrapper">
+        <div class="flex-header">
+          <h2>Popular deals</h2>
+          <a href="">See all</a>
+        </div>
+        <div class="items">
+          <div class="popular-item">
+            <div
+              class="popular-img"
+              style="background-image: url(img/1.jpeg)"
+            ></div>
+          </div>
+          <div class="popular-item">
+            <div
+              class="popular-img"
+              style="background-image: url(img/2.jpeg)"
+            ></div>
+          </div>
+          <div class="popular-item">
+            <div
+              class="popular-img"
+              style="background-image: url(img/3.jpeg)"
+            ></div>
+          </div>
+          <div class="popular-item">
+            <div
+              class="popular-img"
+              style="background-image: url(img/4.jpeg)"
+            ></div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <div class="bottom-nav">
+      <div class="bottom-inner">
+        <div class="bottom-main">
+          <div class="nav-items">
+            <div class="nav-item">
+              <span class="las la-home"></span>
+              <a href="index.html"> <p>Beranda</p></a>
+            </div>
+            <div class="nav-item">
+              <a href="dompet.html">
+                <span class="las la-shopping-cart"></span>
+                <!-- 'card' corrected to 'cart' -->
+                <p>Dompet</p></a
+              >
+            </div>
+          </div>
+          <div class="nav-items">
+            <div class="nav-item">
+              <span class="las la-history"></span>
+              <p>Riwayat</p>
+            </div>
+            <div class="nav-item">
+              <span class="las la-comments"></span>
+              <!-- 'ellipsis-chat' corrected to 'comments' -->
+              <p>Pesan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
