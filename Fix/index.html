@@ -1,347 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redesign v8</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="output.css" /> -->
-  </head>
-  <body class="bg-white overflow-hidden">
-    <!-- header -->
-    <div class="flex flex-col h-screen">
-      <header class="px-2 pt-2 pb-2.5 bg-[#00880c]">
-        <div class="flex flex-row">
-          <div
-            class="w-[80rem] h-[2.5rem] bg-slate-200 mr-4 flex justify-start items-center rounded-full ml-2"
-          >
-            <div class="flex flex-row">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5 ml-3 mr-3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                />
-              </svg>
-              <div class="text-sm text-slate-700">
-                search your daily needs here
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-[11rem] h-[2.5rem] bg-slate-200 rounded-full flex items-center justify-center mr-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6 text-[#00880c]"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </header>
-      <!-- konten -->
-      <main class="p-4 flex-grow bg-slate-100">
-        <!-- konten1 -->
-        <div
-          class="w-full h-22 flex flex-row bg-[#0081a0] rounded-2xl px-3 py-2"
-        >
-          <div class="w-40 h-full overflow-scroll">
-            <div class="w-36 max-24 bg-slate-100 rounded-md py-1 px-3">
-              <div class="flex flex-row items-stretch">
-                <div class="self-center mr-0.5">
-                  <img
-                    class="w-4 h-4"
-                    src="https://fahmii19.github.io/RedesignV8.github.io/assets/gopay.png"
-                    alt=""
-                  />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redesign v8</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <link rel="stylesheet" href="output.css" /> -->
+    </head>
+    <body class="bg-white overflow-hidden">
+        <!-- header -->
+        <div class="flex flex-col h-screen">
+            <header class="px-2 pt-2 pb-2.5 bg-[#00880c]">
+                <div class="flex flex-row">
+                    <div
+                        class="w-[80rem] h-[2.5rem] bg-slate-200 mr-4 flex justify-start items-center rounded-full ml-2"
+                    >
+                        <div class="flex flex-row">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-5 h-5 ml-3 mr-3"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                                />
+                            </svg>
+                            <div class="text-sm text-slate-700">
+                                search your daily needs here
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="w-[11rem] h-[2.5rem] bg-slate-200 rounded-full flex items-center justify-center mr-2"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="w-6 h-6 text-[#00880c]"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                                clip-rule="evenodd"
+                            />
+                        </svg>
+                    </div>
                 </div>
-                <div class="text-xs font-bold self-center -mt-0.5">Saldo</div>
-              </div>
-              <div class="text-sm font-bold py-1">RP1.250.000</div>
-              <div class="text-sm font-bold text-[#018812]">
-                Klik & cek riwayat
-              </div>
-            </div>
-          </div>
+            </header>
+            <!-- konten -->
+            <main class="p-4 flex-grow bg-slate-100">
+                <!-- konten1 -->
+                <div
+                    class="w-full h-22 flex flex-row bg-[#0081a0] rounded-2xl px-3 py-2"
+                >
+                    <div class="w-40 h-full overflow-scroll">
+                        <div
+                            class="w-36 max-24 bg-slate-100 rounded-md py-1 px-3"
+                        >
+                            <div class="flex flex-row items-stretch">
+                                <div class="self-center mr-0.5">
+                                    <img
+                                        class="w-4 h-4"
+                                        src="https://fahmii19.github.io/RedesignV8.github.io/assets/gopay.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="text-xs font-bold self-center -mt-0.5"
+                                >
+                                    Saldo
+                                </div>
+                            </div>
+                            <div class="text-sm font-bold py-1">
+                                RP1.250.000
+                            </div>
+                            <div class="text-sm font-bold text-[#018812]">
+                                Klik & cek riwayat
+                            </div>
+                        </div>
+                    </div>
 
-          <div class="w-14 h-full flex flex-col justify-center items-center">
-            <img
-              class="w-8 h-8"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/bayar.png"
-              alt=""
-            />
-            <div class="text-white font-semibold text-xs mt-1">Bayar</div>
-          </div>
-          <div class="w-14 h-full flex flex-col justify-center items-center">
-            <img
-              class="w-8 h-8"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/isisaldo.png"
-              alt=""
-            />
-            <div class="text-white font-semibold text-xs mt-1">Isi Saldo</div>
-          </div>
-          <div class="w-14 h-full flex flex-col justify-center items-center">
-            <img
-              class="w-8 h-8"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/eksplor.png"
-              alt=""
-            />
-            <div class="text-white font-semibold text-xs mt-1">Instan</div>
-          </div>
-        </div>
-        <!-- konten2 -->
-        <div class="w-full h-36 mt-6 px-3">
-          <div class="flex justify-between h-20">
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-12 h-12 mt-1 ml-[0.1rem]"
-                  src="./assets/PICKUP-BAK.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">Pickup Bak</div>
-            </div>
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-12 h-12 mt-[0.6rem] ml-[0.2rem]"
-                  src="./assets/CDD-BAK.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">CDD Bak</div>
-            </div>
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-12 h-12 mt-[0.6rem] ml-[0.5rem]"
-                  src="./assets/CDD-BOX.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">CDD Boxx</div>
-            </div>
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-14 h-12 mt-[0.5rem] ml-[0.4rem]"
-                  src="./assets/ENGKEL-BOX.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">Engke Box</div>
-            </div>
-          </div>
-          <div class="flex justify-between h-20 mt-1">
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-14 h-[2.8] mt-[0.3rem] ml-[0.5rem]"
-                  src="./assets/PICKUP-BOX.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">Pickup Box</div>
-            </div>
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-12 h-11 mt-1.5 ml-1"
-                  src="./assets/DESIGN-KENDARAAN-STICKER.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">Truck</div>
-            </div>
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg">
-                <img
-                  class="w-12 h-11 mt-1.5 ml-1"
-                  src="./assets/DESIGN-KENDARAAN-STICKER.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">Truck</div>
-            </div>
-            <div class="w-16 h-16 flex flex-col items-center justify-center">
-              <div class="w-10 h-10 bg-[#ededed] rounded-full">
-                <img
-                  class="w-9 h-19"
-                  src="https://fahmii19.github.io/RedesignV8.github.io/assets/semua.png"
-                  alt=""
-                />
-              </div>
-              <div class="text-xs font-normal mt-3">Lainnya</div>
-            </div>
-          </div>
-        </div>
+                    <div
+                        class="w-14 h-full flex flex-col justify-center items-center"
+                    >
+                        <img
+                            class="w-8 h-8"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/bayar.png"
+                            alt=""
+                        />
+                        <div class="text-white font-semibold text-xs mt-1">
+                            Bayar
+                        </div>
+                    </div>
+                    <div
+                        class="w-14 h-full flex flex-col justify-center items-center"
+                    >
+                        <img
+                            class="w-8 h-8"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/isisaldo.png"
+                            alt=""
+                        />
+                        <div class="text-white font-semibold text-xs mt-1">
+                            Isi Saldo
+                        </div>
+                    </div>
+                    <div
+                        class="w-14 h-full flex flex-col justify-center items-center"
+                    >
+                        <img
+                            class="w-8 h-8"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/eksplor.png"
+                            alt=""
+                        />
+                        <div class="text-white font-semibold text-xs mt-1">
+                            Instan
+                        </div>
+                    </div>
+                </div>
+                <!-- konten2 -->
+                <div class="w-full h-36 mt-6 px-3">
+                    <div class="flex justify-between h-20">
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-12 h-12 mt-1 ml-[0.1rem]"
+                                    src="./assets/PICKUP-BAK.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">
+                                Pickup Bak
+                            </div>
+                        </div>
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-12 h-12 mt-[0.6rem] ml-[0.2rem]"
+                                    src="./assets/CDD-BAK.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">CDD Bak</div>
+                        </div>
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-12 h-12 mt-[0.6rem] ml-[0.5rem]"
+                                    src="./assets/CDD-BOX.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">CDD Boxx</div>
+                        </div>
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-14 h-12 mt-[0.5rem] ml-[0.4rem]"
+                                    src="./assets/ENGKEL-BOX.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">
+                                Engke Box
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between h-20 mt-1">
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-14 h-[2.8] mt-[0.3rem] ml-[0.5rem]"
+                                    src="./assets/PICKUP-BOX.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">
+                                Pickup Box
+                            </div>
+                        </div>
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-12 h-11 mt-1.5 ml-1"
+                                    src="./assets/DESIGN-KENDARAAN-STICKER.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">Truck</div>
+                        </div>
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div
+                                class="w-[3rem] h-[2.8rem] bg-[#cef0ba] rounded-lg"
+                            >
+                                <img
+                                    class="w-12 h-11 mt-1.5 ml-1"
+                                    src="./assets/DESIGN-KENDARAAN-STICKER.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">Truck</div>
+                        </div>
+                        <div
+                            class="w-16 h-16 flex flex-col items-center justify-center"
+                        >
+                            <div class="w-10 h-10 bg-[#ededed] rounded-full">
+                                <img
+                                    class="w-9 h-19"
+                                    src="https://fahmii19.github.io/RedesignV8.github.io/assets/semua.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-xs font-normal mt-3">Lainnya</div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- konten2 -->
-        <div
-          class="w-full h-36 mt-8 py-4 px-2 bg-white flex flex-row rounded-[0.7rem] shadow-lg"
-        >
-          <!-- component -->
-          <div class="w-full h-full flex flex-col">
-            <div class="inline-flex">
-              <img
-                class="w-8 h-8 object-contain"
-                src="./assets/location1.png"
-                alt=""
-              />
-              <!--  -->
-              <div class="items-center w-full">
-                <input
-                  class="appearance-none bg-transparent border-b w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="text"
-                  placeholder="Lokasi Penjemputan"
-                  aria-label="Full name"
-                />
-              </div>
-            </div>
-            <!-- garis -->
-            <div class="inline-flex">
-              <div
-                class="h-8 ml-3.5 border-dotted border-l-4 border-light-blue-500"
-              ></div>
-            </div>
-            <!--  -->
-            <div class="inline-flex">
-              <img
-                class="w-8 h-8 object-contain ml-0.5"
-                src="./assets/location2.png"
-                alt=""
-              />
-              <!--  -->
-              <div class="items-center w-full">
-                <input
-                  class="appearance-none bg-transparent border-b w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
-                  type="text"
-                  placeholder="Alamat Tujuan"
-                  aria-label="Full name"
-                />
-              </div>
-            </div>
-            <!--  -->
-          </div>
-        </div>
+                <!-- konten2 -->
+                <div
+                    class="w-full h-36 mt-8 py-4 px-2 bg-white flex flex-row rounded-[0.7rem] shadow-lg"
+                >
+                    <!-- component -->
+                    <div class="w-full h-full flex flex-col">
+                        <div class="inline-flex">
+                            <img
+                                class="w-8 h-8 object-contain"
+                                src="./assets/location1.png"
+                                alt=""
+                            />
+                            <!--  -->
+                            <div class="items-center w-full">
+                                <input
+                                    class="appearance-none bg-transparent border-b w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                    type="text"
+                                    placeholder="Lokasi Penjemputan"
+                                    aria-label="Full name"
+                                />
+                            </div>
+                        </div>
+                        <!-- garis -->
+                        <div class="inline-flex">
+                            <div
+                                class="h-8 ml-3.5 border-dotted border-l-4 border-light-blue-500"
+                            ></div>
+                        </div>
+                        <!--  -->
+                        <div class="inline-flex">
+                            <img
+                                class="w-8 h-8 object-contain ml-0.5"
+                                src="./assets/location2.png"
+                                alt=""
+                            />
+                            <!--  -->
+                            <div class="items-center w-full">
+                                <input
+                                    class="appearance-none bg-transparent border-b w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                                    type="text"
+                                    placeholder="Alamat Tujuan"
+                                    aria-label="Full name"
+                                />
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
 
-        <div class="w-full grid grid-cols-2 gap-3 mt-4">
-          <div class="w-full">
-            <div
-              class="bg-white w-44 h-12 flex items-center justify-between p-1 px-2 rounded-lg shadow-xl"
+                <div class="w-full grid grid-cols-2 gap-3 mt-4">
+                    <div class="w-full">
+                        <div
+                            class="bg-white w-44 h-12 flex items-center justify-between p-1 px-2 rounded-lg shadow-xl"
+                        >
+                            <div class="text-sm font-semibold px-2">
+                                <span>15%</span> <span>Cashback</span>
+                            </div>
+                            <div
+                                class="w-7 h-7 bg-[#00aa13] flex items-center justify-center rounded-full mr-1"
+                            >
+                                <img
+                                    class="w-7 h-7"
+                                    src="https://fahmii19.github.io/RedesignV8.github.io/assets/kupon_promo.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div
+                            class="bg-white w-44 h-12 flex items-center justify-between p-1 px-2 rounded-lg shadow-xl"
+                        >
+                            <div class="text-sm font-semibold px-2">
+                                <span>10</span> <span>Gratis Ongkir</span>
+                            </div>
+                            <div
+                                class="w-7 h-7 bg-[#00aa13] flex items-center justify-center rounded-full mr-1"
+                            >
+                                <img
+                                    class="w-7 h-7"
+                                    src="https://fahmii19.github.io/RedesignV8.github.io/assets/kupon_promo.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-40 overflow-y-scroll mt-5">
+                    <img
+                        class="object-fill w-full max-h-32 mb-5"
+                        src="./assets/iklannn.jpg"
+                        alt=""
+                    />
+                </div>
+
+                <!-- konten4 -->
+                <img src="" alt="" />
+            </main>
+            <!-- Footer -->
+            <footer
+                class="w-full h-[4rem] bg-white grid grid-cols-4 place-items-center px-1"
             >
-              <div class="text-sm font-semibold px-2">
-                <span>15%</span> <span>Cashback</span>
-              </div>
-              <div
-                class="w-7 h-7 bg-[#00aa13] flex items-center justify-center rounded-full mr-1"
-              >
-                <img
-                  class="w-7 h-7"
-                  src="https://fahmii19.github.io/RedesignV8.github.io/assets/kupon_promo.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div class="w-full">
-            <div
-              class="bg-white w-44 h-12 flex items-center justify-between p-1 px-2 rounded-lg shadow-xl"
-            >
-              <div class="text-sm font-semibold px-2">
-                <span>10</span> <span>Gratis Ongkir</span>
-              </div>
-              <div
-                class="w-7 h-7 bg-[#00aa13] flex items-center justify-center rounded-full mr-1"
-              >
-                <img
-                  class="w-7 h-7"
-                  src="https://fahmii19.github.io/RedesignV8.github.io/assets/kupon_promo.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <img
+                            class="w-7 h-7"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/home.png"
+                            alt="beranda"
+                        />
+                    </div>
+                    <div class="text-sm tracking-wide font-medium">Beranda</div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <img
+                            class="w-9 h-9"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/kupon_promo_home.png"
+                            alt="beranda"
+                        />
+                    </div>
+                    <div
+                        class="text-sm tracking-wide font-medium text-gray-600 -mt-1"
+                    >
+                        Promo
+                    </div>
+                </div>
+                <div class="flex flex-col items-center mt-1">
+                    <div>
+                        <img
+                            class="w-8 h-8"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/pesanan.png"
+                            alt="beranda"
+                        />
+                    </div>
+                    <div
+                        class="text-sm tracking-wide font-medium text-gray-600 -mt-0.5"
+                    >
+                        Pesanan
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <img
+                            class="w-9 h-9"
+                            src="https://fahmii19.github.io/RedesignV8.github.io/assets/chat.png"
+                            alt="beranda"
+                        />
+                    </div>
+                    <div
+                        class="text-sm tracking-wide font-medium text-gray-600 -mt-1"
+                    >
+                        Chat
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <div class="w-full h-40 overflow-y-scroll mt-5">
-          <img
-            class="object-fill w-full max-h-32 mb-5"
-            src="./assets/iklannn.jpg"
-            alt=""
-          />
-        </div>
-
-        <!-- konten4 -->
-        <img src="" alt="" />
-      </main>
-      <!-- Footer -->
-      <footer
-        class="w-full h-[4rem] bg-white grid grid-cols-4 place-items-center px-1"
-      >
-        <div class="flex flex-col items-center">
-          <div>
-            <img
-              class="w-7 h-7"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/home.png"
-              alt="beranda"
-            />
-          </div>
-          <div class="text-sm tracking-wide font-medium">Beranda</div>
-        </div>
-        <div class="flex flex-col items-center">
-          <div>
-            <img
-              class="w-9 h-9"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/kupon_promo_home.png"
-              alt="beranda"
-            />
-          </div>
-          <div class="text-sm tracking-wide font-medium text-gray-600 -mt-1">
-            Promo
-          </div>
-        </div>
-        <div class="flex flex-col items-center mt-1">
-          <div>
-            <img
-              class="w-8 h-8"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/pesanan.png"
-              alt="beranda"
-            />
-          </div>
-          <div class="text-sm tracking-wide font-medium text-gray-600 -mt-0.5">
-            Pesanan
-          </div>
-        </div>
-        <div class="flex flex-col items-center">
-          <div>
-            <img
-              class="w-9 h-9"
-              src="https://fahmii19.github.io/RedesignV8.github.io/assets/chat.png"
-              alt="beranda"
-            />
-          </div>
-          <div class="text-sm tracking-wide font-medium text-gray-600 -mt-1">
-            Chat
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
